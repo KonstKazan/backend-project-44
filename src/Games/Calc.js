@@ -36,6 +36,6 @@ const gameLogic = () => {
 };
 
 export default () => {
-  const tutorial = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const tutorial = 'What is the result of the expression?';
   runGame(tutorial, gameLogic);
 };
