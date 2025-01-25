@@ -13,7 +13,7 @@ const getRandomInt = (min, max) => {
 };
 
 const gameLogic = () => {
-  const question = getRandomInt(min, max);
+  const question = String(getRandomInt(min, max));
   const correctAnswer = isEven(question) ? 'yes' : 'no';
   return [question, correctAnswer];
 };
