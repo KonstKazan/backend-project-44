@@ -8,7 +8,7 @@ export default (tutorial, gameLogic) => {
   console.log(tutorial);
   for (let i = 0; i < numberOfRound; i += 1) {
     const [question, correctAnswer] = gameLogic();
-    console.log(`Question: , ${question}`);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
     if (answer === correctAnswer) {
       console.log('Correct!');
